@@ -59,27 +59,27 @@ Additionally, you will need to download and configure the Chrome WebDriver separ
 In this project, we successfully scraped data from IMDb's list of the top 250 movies of all time. We used a combination of two powerful Python libraries, Requests and BeautifulSoup, to fetch and parse the initial HTML page. Then, we utilized Selenium WebDriver to handle dynamic web content and collect additional data. Here's a brief overview of the solution:
 
 
-##### **Data Collection:**
+#### **Data Collection:**
 In the IMDb scraping project, data collection is the initial step where we gather information from IMDb's website. IMDb, short for the Internet Movie Database, is a popular online database of movies, TV shows, and celebrities. It provides a wealth of information about films, including movie titles, release years, ratings, and more.
 
 
-##### **Web Page Rendering:**
+#### **Web Page Rendering:**
 After selecting IMDb as our data source, the next step is web page rendering. In this project, we use Selenium, a powerful tool for automating web interactions, to render IMDb's web pages. Rendering involves opening a web page using a web browser, in this case, Chrome, and allowing it to fully load. This is crucial because IMDb's website uses JavaScript to load dynamic content, such as movie ratings and details, which isn't present in the initial HTML response. By rendering the page, we ensure that all data is available for extraction.
 
 
-##### **HTML Parsing:**
+#### **HTML Parsing:**
 With the rendered web page at our disposal, we employ BeautifulSoup, a Python library, to parse the HTML content. 
 
 
-##### **Data Extraction:**
+#### **Data Extraction:**
 Data extraction is the heart of the project. We identify and target specific HTML elements on the IMDb web page that contain the information we want. In this case, we extract movie titles, release years, IMDb ratings, movie durations, and movie URLs. To achieve this, we use techniques like CSS selectors to pinpoint the exact location of the desired data within the HTML structure.
 
 
-##### **Data Validation and Handling:**
+#### **Data Validation and Handling:**
 Data validation and handling ensure that the extracted data is of high quality and consistency. For instance, if a movie's release year is not available on the web page, we assign it the value "Not Provided" to indicate that the information is missing. This step is vital for maintaining data integrity and ensuring that the resulting dataset is clean and ready for analysis.
 
 
-##### **CSV File Creation:**
+#### **CSV File Creation:**
 Once we have successfully extracted and validated the data, the final step is to create a structured format for storage. We use Python's Pandas library to organize the data into a DataFrame, a tabular data structure. This DataFrame is then saved as a CSV (Comma-Separated Values) file. 
 
 
